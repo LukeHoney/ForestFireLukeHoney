@@ -13,6 +13,5 @@ public class HideMenu : MonoBehaviour
         {
             menu.SetActive(true); // Activate the Menu to be visable
         }
-        else menu.SetActive(false); 
     }
 }
