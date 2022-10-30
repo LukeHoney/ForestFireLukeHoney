@@ -6,10 +6,9 @@ using UnityEngine.UI;
 
 public class QuitGameScript : MonoBehaviour
 {
-    void QuitGame() //Create a quit function
+   public void QuitGame() //Create a quit function
     {
         Application.Quit(); // Quiting Script
-        Debug.Log("Game is exiting"); //Shows quitting action in console
-        
+        Debug.Log("Quiting the Game"); //Shows quitting action in console
     }
 }

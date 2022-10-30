@@ -304,7 +304,7 @@ public class ForestFire3D : MonoBehaviour
         }
     }
 
-    // udpate the grid cells according to their current state
+    // update the grid cells according to their current state
     // this function will be called every frame of the game so the grid is always up to date 
     private void UpdateGridVisuals()
     {
