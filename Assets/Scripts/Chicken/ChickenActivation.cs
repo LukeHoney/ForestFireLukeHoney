@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChickenActivation : MonoBehaviour
 {
-    public FollowingScript followingScript; //refencing following script
+    public FollowingScript followingScript; //refencing the following script
    
     private void OnTriggerEnter(Collider other) //function what in range of the Chicken
     {

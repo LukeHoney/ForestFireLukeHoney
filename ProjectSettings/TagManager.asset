@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bread
   - ChickenHut
+  - Chicken
   layers:
   - Default
   - TransparentFX
