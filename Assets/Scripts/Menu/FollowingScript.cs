@@ -10,7 +10,7 @@ public class FollowingScript : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position,bread.transform.position,speed * Time.deltaTime); // Telling the Chicken to follow the bread
-        Debug.Log("Chicken is now following the Bread"); //Shows in log when Chicken is following the bread
+        //Debug.Log("Chicken is now following the Bread"); //Shows in log when Chicken is following the bread
 
     }
 

@@ -11,7 +11,7 @@ public class LookAt : MonoBehaviour
     void Update()
     {
         transform.LookAt(bread); //code to make chicken look at the target (Bread)
-        Debug.Log("Chicken is now looking at the Bread"); //Shows in log when Chicken is looking at the bread
+        //Debug.Log("Chicken is now looking at the Bread"); //Shows in log when Chicken is looking at the bread
     }
 }
 

@@ -16,13 +16,13 @@ public class ChickenHut : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        // Debug.LogWarning("trigger detected"); //
-        if(other.tag == "Chicken")
+        // Debug.LogWarning("trigger detected"); //logging if any collisions are detected
+        if(other.tag == "Chicken") //looking for game object with Chicken tag
         {
-            Debug.LogError("chicken trigger detected");
-            GameObject chickenInHut = other.gameObject;
-            playerScore = playerScore + valueScore; //Player score is increased by one as one more chicken is saves
-            chickenInHut.SetActive(false); // Deactivate 
+            // Debug.LogError("chicken trigger detected"); //logging if any collisions with Chicken tag object
+            GameObject chickenInHut = other.gameObject; //if the chicken collides with the chicken hut
+            playerScore = playerScore + valueScore; //Player score is increased by one as one more chicken is saved
+            chickenInHut.SetActive(false); // Deactivate the chicken to hide it from the scene
         }
     }
 
