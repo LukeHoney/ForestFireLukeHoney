@@ -240,6 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chickenMaxHeath: 5
   chickenCurrentHealth: 0
+  chicken: {fileID: 3662613528293710295}
 --- !u!114 &3662613529038495641
 MonoBehaviour:
   m_ObjectHideFlags: 0

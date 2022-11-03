@@ -6,7 +6,7 @@ public class ChickenDamage : MonoBehaviour
 {
     public ChickenHeath ChickenHeathScript; //reference to chicken health script   
 
-    public float damageValue; //creates a variable to carry the damage value
+    public int damageValue; //creates a variable to carry the damage value
 
     // Start is called before the first frame update
     void Start()
@@ -27,4 +27,5 @@ public class ChickenDamage : MonoBehaviour
             Debug.Log("this in not the chicken"); //log if fire is colliding with something else
         }
     }
+
 }
