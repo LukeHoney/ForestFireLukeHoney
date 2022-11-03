@@ -17,6 +17,7 @@ public class ForestFire3D : MonoBehaviour
     public int grassChance; // the percentage chance a cell is assigned as grass
 
     public GameObject cellPrefab; // gameobject prefab used to represent a cell on the grid   
+    public GameObject chickenHut; //gameobect of chicken hut to be spawned
 
     public ForestFireCell[,] forestFireCells = new ForestFireCell[0, 0]; // array of ForestFireCell objects
     public ForestFireCell.State[,] forestFireCellsNextGenStates = new ForestFireCell.State[0,0]; // array of cell states to be used in the next generation of the game 
