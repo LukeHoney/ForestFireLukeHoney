@@ -11,7 +11,8 @@ public class FireDamage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ChickenHeathScript = GameObject.FindGameObjectWithTag("Chicken").GetComponent<ChickenHeath>(); //Gets Chicken Heath Script from Chicken
+        ChickenHeathScript = GetComponent<ChickenHeath>();
+        // ChickenHeathScript = GameObject.FindGameObjectWithTag("Chicken").GetComponent<ChickenHeath>(); //Gets Chicken Heath Script from Chicken
     }
 
     public void OnTriggerEnter(Collider other)
