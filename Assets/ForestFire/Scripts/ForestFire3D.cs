@@ -144,6 +144,13 @@ public class ForestFire3D : MonoBehaviour
 
         // set the middle cell as grass which is where the player is placed
         forestFireCells[20, 20].SetGrass();
+
+
+
+
+        Instantiate(cellPrefab, forestFireCells[20, 20].transform.position, Quaternion.identity);
+
+
     }
 
 
