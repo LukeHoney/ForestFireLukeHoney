@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ChickenLocation : MonoBehaviour
 {
+    public ForestFire3D ForestFire3D;
+
     // Start is called before the first frame update
     void Start()
     {

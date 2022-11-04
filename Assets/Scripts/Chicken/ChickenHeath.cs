@@ -9,13 +9,13 @@ public class ChickenHeath : MonoBehaviour
 
     public GameObject chicken; //Refrence to the chicken as a game object
 
-    public HealthBarScript healthBarScript; //Refrence to healthbar script
+    //public HealthBarScript healthBarScript; //Refrence to healthbar script
 
     // Start is called before the first frame update
     void Start()
     {
         chickenCurrentHealth = chickenMaxHeath; // Starts game with current health equal to desired max health
-        healthBarScript.SetMaxHealth(chickenMaxHeath); //Sets the health bar to match max health at start
+        //healthBarScript.SetMaxHealth(chickenMaxHeath); //Sets the health bar to match max health at start
     }
 
     // Update is called once per frame
@@ -29,9 +29,9 @@ public class ChickenHeath : MonoBehaviour
 
     }
 
-    void Healthbar(int damage)
-    {
-        healthBarScript.SetHealth(chickenCurrentHealth); //Sets the health bar to match current health
-    }
+    //void Healthbar(int damage)
+    //{
+        //healthBarScript.SetHealth(chickenCurrentHealth); //Sets the health bar to match current health
+    //}
 
 }
