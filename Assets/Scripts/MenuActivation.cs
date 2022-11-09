@@ -19,17 +19,26 @@ public class MenuActivation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (pauseMenuAction.action.IsPressed()|| Input.GetKeyDown(KeyCode.T)) //if selected buttons are pressed
+        if (Input.GetKey("space")) //if spacebar is pressed
         {
-            if (isPaused) 
-            {
-                PauseGame();
-            }
-            else
-            {
-                ResumeGame();
-            }
+            pauseMenu.SetActive(false); // Activate the Menu to be disapper
         }
+
+        if (pauseMenuAction.action.IsPressed()) //if selected buttons are pressed
+        {
+            Debug.Log("menu button is pressed"); //debug to see if menu button is pressed
+            
+            if (isPaused) //if the game is currently paused
+     {
+       ResumeGame(); //Do Resumegame method
+        }
+      else //if the game is currently playing
+       {
+             PauseGame(); //Do Pause Method
+            }
+        
+        }
+      
     }
     
     public void PauseGame()
@@ -46,19 +55,3 @@ public class MenuActivation : MonoBehaviour
         isPaused = false; //change state of bool to play mode
     }
 }
-
-
-    //if (menuShowingAction.action.IsPressed()) // If Menu button is pressed
-    //{
-    //   Debug.Log("Menubutton is being pressed");
-    //}
-    //        if (Menu.SetActive(true))
-    //        {
-    //            Menu.SetActive(false); //Set Menu as not Active
-    //            
-    //        }
-
-//        if (Menu.SetActive(false))
-//        {
-//            Menu.SetActive(true);
-//        }

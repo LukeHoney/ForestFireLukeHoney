@@ -39,20 +39,17 @@ public class ArrowLook : MonoBehaviour
         if (LookAtTarget) //if a target is avalable
             transform.LookAt(LookAtTarget); //arrow to direct at target
 
-        if (Spinner) //if arrow is spinning
-            Spinner.transform.Rotate(0, 0, speed * Time.deltaTime); //spin the arrow at desired speed per real life time
-
-
-        //if (GameObject.activeInHierarchy = true)
-        { 
         
-        }
+
+        //if chicken.Active(true)
+        //{
+        //    SetTarget = chicken;
+
+        //}
+       
             //if chicken is isActiveAndEnabled then set as target
         //else if chicken2 is isActiveAndEnabled then set as target
         //else if chicken3 is isActiveAndEnabled then set as target
     }
-
-
-
 
 }
