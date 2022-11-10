@@ -9,13 +9,14 @@ public class MenuActivation : MonoBehaviour
 
     public GameObject pauseMenu; //refrence to the game object
 
-    public bool isPaused;
+    public bool isPaused; //refrence to if the game is paused or not
 
     // Start is called before the first frame update
     private void Start()
     {
         pauseMenu.SetActive(true); //at the start of the game the pause menu is up
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -26,14 +27,14 @@ public class MenuActivation : MonoBehaviour
 
         if (pauseMenuAction.action.IsPressed()) //if selected buttons are pressed
         {
-            Debug.Log("menu button is pressed"); //debug to see if menu button is pressed
+            //Debug.Log("menu button is pressed"); //debug to see if menu button is pressed
             
             if (isPaused) //if the game is currently paused
-     {
-       ResumeGame(); //Do Resumegame method
-        }
-      else //if the game is currently playing
-       {
+            {
+                ResumeGame(); //Do Resumegame method
+            }
+            else //if the game is currently playing
+            {
              PauseGame(); //Do Pause Method
             }
         
@@ -41,17 +42,19 @@ public class MenuActivation : MonoBehaviour
       
     }
     
-    public void PauseGame()
+    public void PauseGame() //Method of pauseing game
     {
         pauseMenu.SetActive(true); //when the pause menu is up
         Time.timeScale = 0f; //pauses the game in background
         isPaused = true; //change state of bool to pause mode
+        AudioListener.pause = true; //Pauses audio of game
     }
 
-    public void ResumeGame()
+    public void ResumeGame() //Method of resuming game
     {
         pauseMenu.SetActive(false); //when the pause menu is not open
         Time.timeScale = 1f; //the game will play
         isPaused = false; //change state of bool to play mode
+        AudioListener.pause = false; //Resumes audio of game
     }
 }
