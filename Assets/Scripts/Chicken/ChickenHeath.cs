@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ChickenHeath : MonoBehaviour
 {
-    public int chickenMaxHeath = 5; //creates a variable to carry the chickens max health value
+    public int chickenMaxHeath = 3; //creates a variable to carry the chickens max health value
     public int chickenCurrentHealth; //creates a variable to carry the chickens current health value
 
     public GameObject chicken; //Refrence to the chicken as a game object
@@ -16,7 +16,6 @@ public class ChickenHeath : MonoBehaviour
     void Start()
     {
         chickenCurrentHealth = chickenMaxHeath; // Starts game with current health equal to desired max health
-        //healthBarScript.SetMaxHealth(chickenMaxHeath); //Sets the health bar to match max health at start
     }
 
     // Update is called once per frame
@@ -30,11 +29,6 @@ public class ChickenHeath : MonoBehaviour
 
         healthbar.value = chickenCurrentHealth; //Sets the health bar to the chickens current health value
 
-    }
-
-    void Healthbar(int damage)
-    {
-        //healthBarScript.SetHealth(chickenCurrentHealth); //Sets the health bar to match current health
     }
 
 }

@@ -23,6 +23,8 @@ public class MenuActivation : MonoBehaviour
         if (Input.GetKey("space")) //if spacebar is pressed
         {
             pauseMenu.SetActive(false); // Activate the Menu to be disapper
+
+            //Debug.Log("Space bar was pressed");
         }
 
         if (pauseMenuAction.action.IsPressed()) //if selected buttons are pressed
@@ -32,12 +34,14 @@ public class MenuActivation : MonoBehaviour
             if (isPaused) //if the game is currently paused
             {
                 ResumeGame(); //Do Resumegame method
+                //Debug.Log("Game was Resumed");
             }
             else //if the game is currently playing
             {
              PauseGame(); //Do Pause Method
+                //Debug.Log("Game was Paused");
             }
-        
+
         }
       
     }

@@ -9,6 +9,6 @@ public class FollowEyeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(bread.position.x, 0.2f, bread.position.z); //go towards just above floor level of bread
+        transform.position = new Vector3(bread.position.x, 0.3f, bread.position.z); //go towards just above the floor level of the bread
     }
 }

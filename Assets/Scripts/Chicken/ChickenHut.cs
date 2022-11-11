@@ -8,7 +8,6 @@ public class ChickenHut : MonoBehaviour
     public GameObject chickenhut; //refrence to the chicken huts
     public GameObject chicken; //refrence to the chicken
 
-
     public GameObject[] chickens; //creating array to list Chickens
 
     public int playerScore; //creates a variable to carry the players score
