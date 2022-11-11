@@ -14,18 +14,18 @@ public class ChickenHut : MonoBehaviour
     public int playerScore; //creates a variable to carry the players score
     private int valueScore = 1; // how many chickens (usually always 1)
 
-    public TMP_Text scoreText;
+    public TMP_Text scoreText; //refrece to text that displays how many chickens are saved
 
     // Start is called before the first frame update
     void Start()
     {
-        scoreText.text = playerScore.ToString();
+        scoreText.text = playerScore.ToString(); //Show number of saved chickens at start of the game (0)
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = playerScore.ToString();
+        scoreText.text = playerScore.ToString(); //update to keep checking how many chickens have been saved
     }
 
     private void OnTriggerEnter(Collider other) 
@@ -39,12 +39,5 @@ public class ChickenHut : MonoBehaviour
             chickenInHut.SetActive(false); // Deactivate the chicken to hide it from the scene
         }
     }
-
-    
-        //private void OnGUI()
-        //{
-        //    GUI.Box(new Rect(100, 100, 200, 100), "Chickens Saved: " + playerScore.ToString());
-        //}
-
 
 }

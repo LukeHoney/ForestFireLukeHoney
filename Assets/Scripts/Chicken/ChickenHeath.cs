@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChickenHeath : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class ChickenHeath : MonoBehaviour
 
     public GameObject chicken; //Refrence to the chicken as a game object
 
-    //public HealthBarScript healthBarScript; //Refrence to healthbar script
+    public Slider healthbar; //Refrence to healthbar slider
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,8 @@ public class ChickenHeath : MonoBehaviour
             chicken.SetActive(false); //Deactivate the chicken to hide it from the scene
             //Debug.Log("Chicken is dead");
         }
+
+        healthbar.value = chickenCurrentHealth; //Sets the health bar to the chickens current health value
 
     }
 
