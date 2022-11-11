@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ChickenHut : MonoBehaviour
 {
@@ -13,6 +14,19 @@ public class ChickenHut : MonoBehaviour
     public int playerScore; //creates a variable to carry the players score
     private int valueScore = 1; // how many chickens (usually always 1)
 
+    public TMP_Text scoreText;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        scoreText.text = playerScore.ToString();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        scoreText.text = playerScore.ToString();
+    }
 
     private void OnTriggerEnter(Collider other) 
     {
@@ -25,5 +39,12 @@ public class ChickenHut : MonoBehaviour
             chickenInHut.SetActive(false); // Deactivate the chicken to hide it from the scene
         }
     }
+
+    
+        //private void OnGUI()
+        //{
+        //    GUI.Box(new Rect(100, 100, 200, 100), "Chickens Saved: " + playerScore.ToString());
+        //}
+
 
 }
