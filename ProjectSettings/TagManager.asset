@@ -8,6 +8,7 @@ TagManager:
   - ChickenHut
   - Chicken
   - Fire
+  - Spawn
   layers:
   - Default
   - TransparentFX
